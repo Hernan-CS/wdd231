@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Web Frontend Development I – Hernan Cancino</title>
+    <meta name="description" content="Homepage, the ">
+    <meta name="author" content="Hernan Cancino">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-home.css">
+    <link rel="stylesheet" href="styles/large-home.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+        <img src="images/logo.svg" alt="Site Logo" class="logo">
+        <span class="site-name">Steal a Language</span>
+        <button id="menu" class="menu-button" aria-label="Toggle Menu">☰</button>
+        </div>
+        <nav class="navbar">
+            <nav id="navMenu" class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Chamber Project</a>
+                <a href="#">Final Project</a>
+            </nav>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Not a big fan of working out, but a keen learner of languages, thereby programming languages cannot be excepted.
+                I'm Hernan, but everybody usually calls me by my last name Cancino, I'm really into learning new things to the point
+                that I spend thousands of hours reading. I'm very self-sufficient and if it's possible, I try to help everybody.
+                There's no better feeling than serving our fellows! 
+            </p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Student photo">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courseContainer"></div>
+            <p id="totalCredits">Total credits for courses listed above: 0</p>
+        </section>
+        
+        <div class="social">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://x.com" target="_blank"><img src="images/x.svg" alt="X"></a>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="currentyear"></span> Hernan Cancino Santiago, Peru 🍂</p>
+        <p id="lastModified"></p>
+    </footer> <!-- Unforgettable gift from WDD131 -->
+</body>
+</html>
