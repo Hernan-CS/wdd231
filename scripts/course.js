@@ -12,7 +12,6 @@ const total = document.getElementById("totalCredits");
 
 function displayCourses(list) {
   container.innerHTML = "";
-  let credits = 0;
 
   list.forEach(course => {
     const div = document.createElement("div");
@@ -21,8 +20,9 @@ function displayCourses(list) {
 
     div.innerHTML = `<strong>${course.subject} ${course.number}</strong> - ${course.title}`;
     container.appendChild(div);
-    credits += course.credits;
   });
+
+  const credits = list.reduce((sum, course) => sum + course.credits, 0);
 
   total.textContent = `The total credits for courses listed above is ${credits}`;
 }
