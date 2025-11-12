@@ -1,0 +1,53 @@
+{
+  "members": [
+    {
+      "name": "Hotel Chavín de Huántar",
+      "address": "Jirón Zavala 620, Barranca, Lima",
+      "phone": "(51) 456-7800",
+      "website": "https://hotelchavindebarranca.com",
+      "image": "hotel-chavin.webp"
+    },
+    {
+      "name": "Restaurante El Encanto Marino",
+      "address": "Av. Grau 512, Barranca, Lima",
+      "phone": "(51) 487-2211",
+      "website": "https://encantomarino.com",
+      "image": "el-encanto.webp"
+    },
+    {
+      "name": "Ferretería San Martín",
+      "address": "Jr. Unión 345, Barranca, Lima",
+      "phone": "(51) 456-9912",
+      "website": "https://ferresanmartin.com",
+      "image": "ferreteria-san-martin.webp"
+    },
+    {
+      "name": "Panadería Dulce Barranca",
+      "address": "Jr. Zavala 231, Barranca, Lima",
+      "phone": "(51) 489-3334",
+      "website": "https://dulcebarranca.com",
+      "image": "panaderia-dulce.webp"
+    },
+    {
+      "name": "Farmacia Santa Rosa",
+      "address": "Av. José Gálvez 715, Barranca, Lima",
+      "phone": "(51) 478-4401",
+      "website": "https://farmaciasantarosa.com",
+      "image": "farmacia-santa-rosa.webp"
+    },
+    {
+      "name": "Gimnasio PowerFit Barranca",
+      "address": "Jr. Sucre 550, Barranca, Lima",
+      "phone": "(51) 499-7788",
+      "website": "https://powerfitbarranca.com",
+      "image": "gimnasio-powerfit.webp"
+    },
+    {
+      "name": "AgroIndustrial Barranca SAC",
+      "address": "Carretera Panamericana Norte Km 191, Barranca, Lima",
+      "phone": "(51) 411-2020",
+      "website": "https://agrobarranca.com",
+      "image": "agroindustrial.webp"
+    }
+  ]
+}
