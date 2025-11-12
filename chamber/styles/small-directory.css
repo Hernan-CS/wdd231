@@ -82,6 +82,9 @@ header {
 }
 
 /* ===== MAIN ===== */
+main {
+  font-size: 14px;
+}
 .directory-section {
   padding: 1rem;
 }
