@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barranca Chamber of Commerce Directory | WDD 231 | Hernan Cancino</title>
+    <meta name="description" content="This code will hold the home (landing) page of the chamber of commerce project developed by the student Hernan Cancino, WDD231.">
+    <meta name="author" content="Hernan Cancino">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+    <!-- SOCIAL MEDIA META -->
+    <meta property="og:title" content="Barranca Chamber of Commerce Home">
+    <meta property="og:description" content="Get to know better Barranca better and discover how many marvelous things it has.">
+    <meta property="og:image" content="https://hernan-cs.github.io/wdd231/chamber/images/barranca-social-view.png">
+    <meta property="og:url" content="https://hernan-cs.github.io/wdd231/chamber/index.html">
+    <!-- FAVICON -->
+    <link rel="icon" href="images/barranca-icon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-home.css">
+    <link rel="stylesheet" href="styles/large-home.css">
+    <!-- JS -->
+    <script src="scripts/home-date.js" defer></script>
+    <script src="scripts/main-cards.js" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo-title">
+            <img src="images/barranca-small-logo.png" alt="Barranca Chamber of Commerce logo" class="logo">
+            <h1>Barranca Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main>
+      <section class="hero">
+        <img src="images/barranca-landscape.jpg" alt="Image showing Barranca" class="hero-image">
+        <a href="#" class="join-cta" aria-label="Join Barranca Chamber">Join the Chamber</a>
+      </section>
+
+      <h2>Home</h2>
+
+      <section class="top-cards">
+        <!-- Events -->
+        <article class="card events-card" aria-labelledby="events-heading">
+          <h3 id="events-heading" class="card-title">Events</h3>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, urna at bibendum cursus, ipsum nisl consectetur libero, nec rutrum augue velit ac velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec quis nulla ac nisi ultricies tincidunt.</p>
+          </div>
+        </article>
+
+        <!-- Current Weather -->
+        <article class="card weather-card" aria-labelledby="current-weather-heading">
+          <h3 id="current-weather-heading" class="card-title">Current Weather</h3>
+          <div class="card-body weather-body">
+            <div id="weather-current-loading">Loading current weather…</div>
+            <div id="weather-current" class="weather-content" hidden>
+              <div class="weather-icon" id="weather-icon"></div>
+              <div class="weather-info">
+                <div class="temp" id="weather-temp"></div>
+                <div class="desc" id="weather-desc"></div>
+                <ul class="weather-details">
+                  <li id="weather-highlow"></li>
+                  <li id="weather-humidity"></li>
+                  <li id="weather-sunrise"></li>
+                  <li id="weather-sunset"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Forecast -->
+        <article class="card forecast-card" aria-labelledby="forecast-heading">
+          <h3 id="forecast-heading" class="card-title">Weather Forecast</h3>
+          <div class="card-body forecast-body" id="forecast-body">
+            <div id="forecast-loading">Loading forecast…</div>
+            <ul id="forecast-list" class="forecast-list" hidden></ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- Member spotlights -->
+      <section class="spotlights">
+        <h3 class="spotlights-title">Business Spotlights</h3>
+        <div id="spotlights" class="spotlights-grid" aria-live="polite">
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-info">
+            <p><strong>Barranca Chamber of Commerce</strong></p>
+            <p>Av. José Gálvez</p>
+            <p>Barranca, Lima 15169</p>
+            <p><a href="mailto:mails@barranca.org">mails@barranca.org</a></p>
+            <p>+51 957 384 232</p>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#FF0000">
+                <path d="M23.498 6.186a2.996 2.996 0 0 0-2.11-2.12C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.388.566a2.996 2.996 0 0 0-2.11 2.12A31.27 31.27 0 0 0 0 12a31.27 31.27 0 0 0 .502 5.814 2.996 2.996 0 0 0 2.11 2.12C4.495 20.5 12 20.5 12 20.5s7.505 0 9.388-.566a2.996 2.996 0 0 0 2.11-2.12A31.27 31.27 0 0 0 24 12a31.27 31.27 0 0 0-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#1DA1F2">
+                <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775a4.932 4.932 0 0 0 2.163-2.724c-.951.564-2.005.974-3.127 1.195A4.916 4.916 0 0 0 16.616 3c-2.733 0-4.944 2.226-4.944 4.97 0 .39.045.765.127 1.124C7.728 8.905 4.1 6.885 1.671 3.905a4.936 4.936 0 0 0-.666 2.496 4.973 4.973 0 0 0 2.188 4.147A4.903 4.903 0 0 1 .96 9.1v.063a4.968 4.968 0 0 0 3.946 4.875 4.902 4.902 0 0 1-2.21.086 4.935 4.935 0 0 0 4.604 3.417A9.867 9.867 0 0 1 0 19.54a13.94 13.94 0 0 0 7.548 2.213c9.142 0 14.307-7.721 13.995-14.646a10.14 10.14 0 0 0 2.411-2.538z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#0077B5">
+                <path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zm-11.5 20H3.9V9h3.6v11zM5.7 7.6c-1.1 0-1.9-.9-1.9-1.9s.8-1.9 1.9-1.9c1 0 1.9.9 1.9 1.9s-.9 1.9-1.9 1.9zM20.1 20h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V20H9V9h3.5v1.5h.1c.5-.9 1.7-1.8 3.4-1.8 3.6 0 4.2 2.4 4.2 5.4V20z"/>
+                </svg>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>WDD231 Class Project | Hernan Cancino</p>
+            <p>&copy; <span id="year"></span> Barranca Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
