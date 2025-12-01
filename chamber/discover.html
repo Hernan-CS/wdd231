@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Barranca Chamber of Commerce | WDD231</title>
-    <meta name="description" content="Page that will hold the bussiness directory of Barranca developed by the student Hernan Cancino, WDD231.">
+    <title>Home | Barranca Chamber of Commerce | WDD231</title>
+    <meta name="description" content="This code will hold the home (landing) page of the chamber of commerce project developed by the student Hernan Cancino, WDD231.">
     <meta name="author" content="Hernan Cancino">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
 
     <!-- SOCIAL MEDIA META -->
-    <meta property="og:title" content="Barranca Chamber of Commerce Directory">
-    <meta property="og:description" content="Go through our website and discover newly raising business in the city.">
+    <meta property="og:title" content="Barranca Chamber of Commerce Home">
+    <meta property="og:description" content="Get to know better Barranca better and discover how many marvelous things it has.">
     <meta property="og:image" content="https://hernan-cs.github.io/wdd231/chamber/images/barranca-social-view.png">
-    <meta property="og:url" content="https://hernan-cs.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://hernan-cs.github.io/wdd231/chamber/index.html">
     <!-- FAVICON -->
-     <link rel="icon" href="images/barranca-icon.ico">
+    <link rel="icon" href="images/barranca-icon.ico">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small-directory.css">
-    <link rel="stylesheet" href="styles/large-directory.css">
+    <link rel="stylesheet" href="styles/small-home.css">
+    <link rel="stylesheet" href="styles/large-home.css">
     <!-- JS -->
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/home-date.js" defer></script>
+    <script src="scripts/main-cards.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -36,23 +36,15 @@
             <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
             <ul id="navMenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discovery.html">Discover</a></li>
+                <li><a href="discovery.html" class="active">Discover</a></li>
             </ul>
         </nav>
     </header>
     
     <!-- MAIN -->
     <main>
-        <section class="directory-section">
-            <h2>Business Directory</h2>
-            <div class="view-buttons">
-                <button id="gridView" class="active">🔳</button>
-                <button id="listView">📋</button>
-            </div>
-            <div id="cards" class="grid-view"></div>
-        </section>
     </main>
 
     <!-- FOOTER -->
