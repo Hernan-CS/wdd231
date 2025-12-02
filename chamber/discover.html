@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Barranca Chamber of Commerce | WDD231</title>
-    <meta name="description" content="This code will hold the home (landing) page of the chamber of commerce project developed by the student Hernan Cancino, WDD231.">
+    <title>Discover | Barranca Chamber of Commerce | WDD231</title>
+    <meta name="description" content="This code will hold the discover page of the chamber of commerce project developed by the student Hernan Cancino, WDD231.">
     <meta name="author" content="Hernan Cancino">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,10 @@
     <link rel="icon" href="images/barranca-icon.ico">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small-home.css">
-    <link rel="stylesheet" href="styles/large-home.css">
+    <link rel="stylesheet" href="styles/small-discover.css">
+    <link rel="stylesheet" href="styles/large-discover.css">
     <!-- JS -->
-    <script src="scripts/home-date.js" defer></script>
-    <script src="scripts/main-cards.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -38,13 +37,21 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discovery.html" class="active">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
             </ul>
         </nav>
     </header>
     
     <!-- MAIN -->
     <main>
+    <div id="visitMessage" class="visit-message" aria-live="polite"></div>
+
+    <section class="intro">
+      <h2>Discover Barranca</h2>
+      <p>Explore 8 notable places across Barranca province — beaches, historical sites, viewpoints, and natural areas. Click "Learn more" to get directions or further info.</p>
+    </section>
+
+    <section id="discoverGrid" class="discover-grid" aria-label="Places of interest in Barranca"></section>
     </main>
 
     <!-- FOOTER -->
