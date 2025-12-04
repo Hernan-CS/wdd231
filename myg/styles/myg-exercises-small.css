@@ -21,6 +21,7 @@ body{
 
 /* HEADER */
 .site-header{
+  color: var(--accent);
   background:var(--primary);
   border-bottom:2px solid var(--accent);
   position:sticky;
