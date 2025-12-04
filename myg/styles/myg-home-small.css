@@ -123,6 +123,8 @@ main {
   display:flex;
   align-items:center;
   justify-content:center;
+
+  background-image: url('../images/myg-banner.jpg');
   background-size: cover;
   background-position: center;
 }
