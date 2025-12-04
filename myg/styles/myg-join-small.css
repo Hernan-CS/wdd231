@@ -41,6 +41,7 @@ body{
   height: 70px; 
 }
 .brand{
+  color: var(--accent);
   display:flex;
   align-items:center;
   text-decoration:none;

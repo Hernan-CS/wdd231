@@ -10,6 +10,9 @@
     width: 200px;
     height: 60px;
   }
+  .brand {
+  color: var(--accent);
+  }
   /* NAV */
   .main-nav{
     display:block !important;
