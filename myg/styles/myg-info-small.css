@@ -16,7 +16,6 @@ body{
   margin:0;
   font-family:"Big Shoulders", system-ui;
   background:#fff;
-  color:#111;
   line-height:1.4;
 }
 
@@ -102,6 +101,9 @@ body{
   background:rgba(255,255,255,0.1);
 }
 /* MAIN */
+main {
+  color:#111;
+}
 .info-hero {
   padding: 2rem 1rem;
   background-color: var(--secondary);

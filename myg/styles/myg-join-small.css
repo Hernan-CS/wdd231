@@ -16,7 +16,6 @@ body{
   margin:0;
   font-family:"Big Shoulders", system-ui;
   background:#fff;
-  color:#111;
   line-height:1.4;
 }
 
@@ -102,7 +101,9 @@ body{
   background:rgba(255,255,255,0.1);
 }
 /* MAIN */
-
+main {
+  color:#111;
+}
 .join-hero{
   background: linear-gradient(180deg, rgba(122,31,53,0.96), rgba(122,31,53,0.85));
   color:var(--accent);
