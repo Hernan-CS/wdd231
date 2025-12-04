@@ -1,0 +1,82 @@
+@media (min-width:900px){
+  :root{font-size:17px}
+
+  .header-inner{padding:0.9rem}
+  .nav-toggle{display:none}
+
+  /* HEADER */
+  #header-logo{
+    content:url("../images/myg-large-logo.png");
+    width: 200px;
+    height: 60px;
+  }
+  /* NAV */
+  .main-nav{
+    display:block !important;
+    position:static;
+    background:transparent;
+    border:0;
+  }
+  .main-nav ul{
+    display:flex;
+    gap:1.25rem;
+    padding:0;
+  }
+  .main-nav a{
+    color:var(--accent);
+    padding:0.3rem 0.6rem;
+  }
+  .main-nav a.active{
+    border-bottom:3px solid var(--accent);
+    color:var(--accent);
+  }
+  /* MAIN */
+  .info-hero {
+    padding: 3rem 2rem;
+  }
+  .info-hero h1 {
+    font-size: 2.5rem;
+  }
+  .test-structure .part {
+    margin-bottom: 2rem;
+  }
+  .preparation-tips ul {
+    columns: 2;
+    column-gap: 2rem;
+  }
+  .call-to-action .btn {
+    margin: 0.75rem 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  /* FOOTER*/
+  .footer-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:2rem;
+    text-align:left;
+  }
+
+  .footer-left{align-items:flex-start}
+  .footer-center{align-items:center}
+  .footer-right{
+    align-items:flex-end;
+    text-align:right;
+  }
+
+  .footer-links{
+    flex-direction:row;
+    justify-content:center;
+    gap:2rem;
+  }
+
+  .social{
+    justify-content:flex-end;
+  }
+
+  #footer-logo{
+    content:url("../images/myg-logo.png");
+    width:100px;
+    height: 110px;
+  }
+}

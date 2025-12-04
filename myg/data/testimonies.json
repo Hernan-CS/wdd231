@@ -1,0 +1,138 @@
+[
+  {
+    "id": "p1",
+    "name": "Ana Morales",
+    "age": "24",
+    "country": "Peru",
+    "occupation": "Student",
+    "image": "images/ana-morales.jpg",
+    "testimony": "Moyinglish helped me finally understand tricky grammar points with bite-sized exercises. I passed my Use of English practice test after two weeks of focused practice."
+  },
+  {
+    "id": "p2",
+    "name": "Carlos Ruiz",
+    "age": "30",
+    "country": "Chile",
+    "occupation": "Teacher",
+    "image": "images/carlos-ruiz.jpg",
+    "testimony": "I used Moyinglish to structure my lesson plans and found the exercises very aligned with exam formats. Concise and practical."
+  },
+  {
+    "id": "p3",
+    "name": "Priya Sharma",
+    "age": "27",
+    "country": "India",
+    "occupation": "Engineer",
+    "image": "images/priya-sharma.jpg",
+    "testimony": "Great for focused practice. The immediate feedback helped me identify weak points and correct them fast."
+  },
+  {
+    "id": "p4",
+    "name": "Liam O'Connor",
+    "age": "22",
+    "country": "Ireland",
+    "occupation": "Student",
+    "image": "images/liam-oconnor.jpg",
+    "testimony": "Short exercises with clear explanations. I loved the practical approach — no fluff."
+  },
+  {
+    "id": "p5",
+    "name": "Sara Lee",
+    "age": "35",
+    "country": "Canada",
+    "occupation": "Analyst",
+    "image": "images/sara-lee.jpg",
+    "testimony": "This site is perfect when you want targeted practice. Excellent structure and notes."
+  },
+  {
+    "id": "p6",
+    "name": "Miguel Santos",
+    "age": "28",
+    "country": "Brazil",
+    "occupation": "Accountant",
+    "image": "images/miguel-santos.jpg",
+    "testimony": "Clear exercises, quick to do and very useful for practice during breaks."
+  },
+  {
+    "id": "p7",
+    "name": "Yuna Kim",
+    "age": "21",
+    "country": "Korea",
+    "occupation": "Student",
+    "image": "images/yuna-kim.jpg",
+    "testimony": "User-friendly and focused. The examples are exactly what I needed to improve."
+  },
+  {
+    "id": "p8",
+    "name": "Omar Haddad",
+    "age": "26",
+    "country": "Egypt",
+    "occupation": "Student",
+    "image": "images/omar-haddad.jpg",
+    "testimony": "The exercises are quick but effective — perfect for exam prep."
+  },
+  {
+    "id": "p9",
+    "name": "Nina Popov",
+    "age": "29",
+    "country": "Bulgaria",
+    "occupation": "Translator",
+    "image": "images/nina-popov.jpg",
+    "testimony": "I especially liked the explanations after each question — very clear and helpful."
+  },
+  {
+    "id": "p10",
+    "name": "Diego Alvarez",
+    "age": "33",
+    "country": "Spain",
+    "occupation": "Designer",
+    "image": "images/diego-alvarez.jpg",
+    "testimony": "The focused practice structure helped me see improvement in real tasks."
+  },
+  {
+    "id": "p11",
+    "name": "Hana Takahashi",
+    "age": "24",
+    "country": "Japan",
+    "occupation": "Student",
+    "image": "images/hana-takahashi.jpg",
+    "testimony": "Loved it. Short sessions that help you retain knowledge better than long, unfocused lessons."
+  },
+  {
+    "id": "p12",
+    "name": "Mark Johnson",
+    "age": "41",
+    "country": "USA",
+    "occupation": "Engineer",
+    "image": "images/mark-johnson.jpg",
+    "testimony": "Good for targeted review. I used the site for focused grammar refreshers and it worked."
+  },
+  {
+    "id": "p13",
+    "name": "Lina Gomez",
+    "age": "20",
+    "country": "Colombia",
+    "occupation": "Student",
+    "image": "images/lina-gomez.jpg",
+    "testimony": "Perfect for quick daily practice. The structure keeps me consistent."
+  },
+  {
+    "id": "p14",
+    "name": "Ethan Brown",
+    "age": "36",
+    "country": "Australia",
+    "occupation": "Consultant",
+    "image": "images/ethan-brown.jpg",
+    "testimony": "I particularly appreciated the structure that mirrors the exam parts."
+  },
+  {
+    "id": "p15",
+    "name": "Zoe Martin",
+    "age": "25",
+    "country": "France",
+    "occupation": "Barista",
+    "image": "images/zoe-martin.jpg",
+    "testimony": "Fun and effective. I like the short explanations that follow each exercise."
+  }
+]
+  

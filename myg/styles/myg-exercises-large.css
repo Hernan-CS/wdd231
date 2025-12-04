@@ -1,0 +1,105 @@
+@media (min-width:900px){
+  :root{font-size:17px}
+
+  .header-inner{padding:0.9rem}
+  .nav-toggle{display:none}
+
+  /* HEADER */
+  #header-logo{
+    content:url("../images/myg-large-logo.png");
+    width: 200px;
+    height: 60px;
+  }
+  /* NAV */
+  .main-nav{
+    display:block !important;
+    position:static;
+    background:transparent;
+    border:0;
+  }
+  .main-nav ul{
+    display:flex;
+    gap:1.25rem;
+    padding:0;
+  }
+  .main-nav a{
+    color:var(--accent);
+    padding:0.3rem 0.6rem;
+  }
+  .main-nav a.active{
+    border-bottom:3px solid var(--accent);
+    color:var(--accent);
+  }
+  /* MAIN */
+
+  .exercises-hero{
+    padding:2rem;
+  }
+  .parts{
+    gap:0.75rem;
+  }
+  .part-btn{
+    padding:0.6rem 1rem;
+    font-size:1rem;
+  }
+  .exercise-area{
+    display:grid;
+    grid-template-columns: 1fr 380px;
+    gap:1rem;
+    min-height:260px;
+    align-items:start;
+    padding:1rem;
+  }
+
+  .exercise-column{
+    min-width:0;
+  }
+  .sidebar-column{
+    background:linear-gradient(180deg, rgba(122,31,53,0.03), rgba(122,31,53,0.01));
+    padding:1rem;
+    border-radius:10px;
+    border:1px solid rgba(122,31,53,0.04);
+    height:100%;
+  }
+
+  .exercise-card{ padding:1rem; display:block; }
+  .q-text{ font-size:1.05rem; }
+  .options{ gap:0.5rem; }
+  .text-answer{ font-size:1rem; padding:0.6rem; }
+
+  .exercise-controls{ justify-content:flex-start; margin-top:1rem; }
+  .control-btn{ padding:0.6rem 1rem; }
+
+  .solution-area{ margin-top:0; }
+
+  /* FOOTER*/
+  .footer-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:2rem;
+    text-align:left;
+  }
+
+  .footer-left{align-items:flex-start}
+  .footer-center{align-items:center}
+  .footer-right{
+    align-items:flex-end;
+    text-align:right;
+  }
+
+  .footer-links{
+    flex-direction:row;
+    justify-content:center;
+    gap:2rem;
+  }
+
+  .social{
+    justify-content:flex-end;
+  }
+
+  #footer-logo{
+    content:url("../images/myg-logo.png");
+    width:100px;
+    height: 110px;
+  }
+}

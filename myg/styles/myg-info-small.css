@@ -1,0 +1,255 @@
+:root{
+  --primary:#7A1F35;
+  --secondary:#D3D3D3;
+  --accent:#f0f87d;
+  --black:#000;
+  --max-width:1100px;
+  --radius:10px;
+  --gap:1rem;
+  font-size:16px;
+}
+
+*{box-sizing:border-box}
+
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:"Big Shoulders", system-ui;
+  background:#fff;
+  color:#111;
+  line-height:1.4;
+}
+
+/* HEADER */
+.site-header{
+  background:var(--primary);
+  border-bottom:2px solid var(--accent);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.header-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0.6rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+}
+#header-logo{
+  width: 70px;
+  height: 70px; 
+}
+.brand{
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+}
+.brand img{
+  width:40px;
+  height:auto;
+}
+
+.nav-toggle{
+  background:none;
+  border:0;
+  padding:0.3rem;
+  cursor:pointer;
+}
+.hamburger{
+  display:block;
+  width:28px;
+  height:2px;
+  background:var(--accent);
+  position:relative;
+}
+.hamburger::before,
+.hamburger::after{
+  content:"";
+  position:absolute;
+  left:0; right:0;
+  height:2px;
+  background:var(--accent);
+}
+.hamburger::before{top:-8px}
+.hamburger::after{top:8px}
+
+.main-nav{
+  font-family: "IM Fell English", serif;
+  position:absolute;
+  left:0; right:0;
+  top:64px;
+  background:var(--primary);
+  border-bottom:2px solid var(--accent);
+  display:none;
+}
+.main-nav ul{
+  list-style:none;
+  padding:0.6rem;
+  margin:0;
+}
+.main-nav a{
+  display:block;
+  padding:0.6rem;
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:700;
+  border-radius:6px;
+}
+.main-nav a:hover,
+.main-nav a.active{
+  background:rgba(255,255,255,0.1);
+}
+/* MAIN */
+.info-hero {
+  padding: 2rem 1rem;
+  background-color: var(--secondary);
+  color: var(--black);
+  text-align: center;
+}
+.info-hero .highlight {
+  color: var(--primary);
+  font-family: "IM Fell English", serif;
+}
+.test-structure, .cefr-levels, .preparation-tips, .call-to-action {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+.test-structure .part {
+  margin-bottom: 1.5rem;
+}
+.test-structure .part h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-family: "IM Fell English", serif;
+}
+.cefr-levels table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.cefr-levels th, .cefr-levels td {
+  border: 1px solid var(--secondary);
+  padding: 0.5rem;
+  text-align: left;
+}
+.cefr-levels th {
+  background-color: var(--primary);
+  color: var(--accent);
+  font-family: "IM Fell English", serif;
+}
+.cefr-levels td {
+  background-color: #fff;
+}
+.preparation-tips ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+.preparation-tips li {
+  margin-bottom: 0.75rem;
+}
+.call-to-action {
+  background-color: var(--primary);
+  color: var(--accent);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: var(--radius);
+}
+.call-to-action .btn {
+  display: inline-block;
+  margin: 0.5rem 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: var(--radius);
+}
+.call-to-action .btn:hover {
+  background: var(--secondary);
+  color: var(--black);
+}
+
+/* FOOTER */
+.site-footer{
+  font-family: "IM Fell English", serif;
+  background:var(--primary);
+  color:var(--accent);
+  padding:2rem 0;
+  margin-top:2rem;
+}
+
+.footer-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  text-align:center;
+}
+
+.footer-col{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.footer-logo{
+  width:90px;
+  height: 100px;
+  margin-bottom:1rem;
+}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+  margin-bottom:1rem;
+}
+.footer-links a{
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:700;
+}
+
+.social{
+  display:flex;
+  justify-content:center;
+  gap:1.25rem;
+  margin-bottom:1.5rem;
+}
+.social a{
+  text-decoration:none;
+  font-weight:bold;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.social a svg{
+  width:28px;
+  height:28px;
+  fill:var(--accent);
+  display:block;
+}
+
+.social a:focus { outline: 3px solid rgba(240,248,255,0.2); outline-offset:3px; border-radius:4px; }
+
+.video-footer{
+  margin-top:0.5rem;
+}
+.video-footer a{
+  color:var(--accent);
+  font-weight:700;
+  text-decoration:underline;
+}
+
+.meta{
+  font-size:0.85rem;
+  opacity:0.9;
+}
+
+@media (min-width:480px){
+  .hero-media{min-height:280px}
+}

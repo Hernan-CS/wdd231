@@ -1,0 +1,334 @@
+:root{
+  --primary:#7A1F35;
+  --secondary:#D3D3D3;
+  --accent:#f0f87d;
+  --black:#000;
+  --max-width:1100px;
+  --radius:10px;
+  --gap:1rem;
+  font-size:16px;
+}
+
+*{box-sizing:border-box}
+
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:"Big Shoulders", system-ui;
+  background:#fff;
+  color:#111;
+  line-height:1.4;
+}
+
+/* HEADER */
+.site-header{
+  background:var(--primary);
+  border-bottom:2px solid var(--accent);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.header-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0.6rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+}
+#header-logo{
+  width: 70px;
+  height: 70px; 
+}
+.brand{
+  display:flex;
+  align-items:center;
+  text-decoration:none;
+}
+.brand img{
+  width:40px;
+  height:auto;
+}
+
+.nav-toggle{
+  background:none;
+  border:0;
+  padding:0.3rem;
+  cursor:pointer;
+}
+.hamburger{
+  display:block;
+  width:28px;
+  height:2px;
+  background:var(--accent);
+  position:relative;
+}
+.hamburger::before,
+.hamburger::after{
+  content:"";
+  position:absolute;
+  left:0; right:0;
+  height:2px;
+  background:var(--accent);
+}
+.hamburger::before{top:-8px}
+.hamburger::after{top:8px}
+
+.main-nav{
+  font-family: "IM Fell English", serif;
+  position:absolute;
+  left:0; right:0;
+  top:64px;
+  background:var(--primary);
+  border-bottom:2px solid var(--accent);
+  display:none;
+}
+.main-nav ul{
+  list-style:none;
+  padding:0.6rem;
+  margin:0;
+}
+.main-nav a{
+  display:block;
+  padding:0.6rem;
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:700;
+  border-radius:6px;
+}
+.main-nav a:hover,
+.main-nav a.active{
+  background:rgba(255,255,255,0.1);
+}
+/* MAIN */
+.exercises-hero{
+  padding:1.25rem;
+  background: linear-gradient(180deg, rgba(250,245,246,1) 0%, rgba(255,255,255,1) 100%);
+}
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+.exercises-hero h1{
+  margin:0 0 0.25rem 0;
+  font-family:"IM Fell English", serif;
+  color:var(--primary);
+  font-size:1.5rem;
+}
+.lead{
+  margin:0 0 1rem 0;
+  color: #333;
+  opacity:0.9;
+  font-size:0.95rem;
+}
+
+.parts{
+  display:flex;
+  gap:0.5rem;
+  flex-wrap:wrap;
+  margin-bottom:1rem;
+}
+.part-btn{
+  background:transparent;
+  border:2px solid rgba(122,31,53,0.12);
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:700;
+  color:var(--primary);
+  transition:all 0.18s ease;
+}
+.part-btn[aria-selected="true"]{
+  background:linear-gradient(90deg,var(--primary),#5b192a);
+  color:var(--accent);
+  border-color:transparent;
+  box-shadow:0 6px 18px rgba(122,31,53,0.12);
+}
+.part-btn:focus{
+  outline:3px solid rgba(240,248,255,0.12);
+}
+
+.exercise-area{
+  margin-top:1rem;
+  border-radius:var(--radius);
+  padding:1rem;
+  background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(250,250,250,0.95));
+  border:1px solid rgba(122,31,53,0.06);
+  min-height:160px;
+}
+.exercise-card{
+  margin-bottom:0.75rem;
+  padding:0.65rem;
+  border-radius:8px;
+  background:linear-gradient(180deg, rgba(255,255,255,1), rgba(250,245,246,1));
+  border:1px solid rgba(122,31,53,0.04);
+}
+.q-text{
+  margin:0 0 0.5rem 0;
+  font-weight:700;
+  color:var(--primary);
+}
+.options{
+  display:flex;
+  flex-direction:column;
+  gap:0.35rem;
+  margin:0.35rem 0 0 0;
+}
+.option{
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+}
+.option input[type="radio"]{
+  width:18px;
+  height:18px;
+}
+
+.text-answer{
+  width:100%;
+  padding:0.5rem;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.08);
+  font-size:1rem;
+  font-family:inherit;
+}
+
+.exercise-controls{
+  display:flex;
+  gap:0.5rem;
+  margin-top:0.85rem;
+  align-items:center;
+}
+.control-btn{
+  background:transparent;
+  border:1px solid rgba(122,31,53,0.14);
+  padding:0.5rem 0.8rem;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:700;
+  color:var(--primary);
+}
+.control-btn[disabled]{
+  opacity:0.45;
+  cursor:not-allowed;
+}
+.control-btn.primary{
+  background:var(--primary);
+  color:var(--accent);
+  border-color:transparent;
+  box-shadow:0 8px 20px rgba(122,31,53,0.06);
+}
+
+.solution-area{
+  margin-top:1rem;
+  padding:0.75rem;
+  border-radius:8px;
+  background:linear-gradient(180deg, rgba(250,248,249,1), rgba(255,255,255,1));
+  border:1px solid rgba(122,31,53,0.06);
+}
+.correct{
+  color: #0f7a3a;
+  font-weight:700;
+}
+.incorrect{
+  color: #b33a3a;
+  font-weight:700;
+}
+.hint{
+  margin-top:0.5rem;
+  font-size:0.92rem;
+  color:#444;
+  opacity:0.9;
+}
+
+.score-area{
+  margin-top:0.85rem;
+  font-weight:700;
+  color:var(--primary);
+}
+
+.muted{ color:#666; font-style:italic; }
+kbd{ background:#f7f7f7; border-radius:4px; padding:0.15rem 0.35rem; border:1px solid #eee; }
+
+/* FOOTER */
+.site-footer{
+  font-family: "IM Fell English", serif;
+  background:var(--primary);
+  color:var(--accent);
+  padding:2rem 0;
+  margin-top:2rem;
+}
+
+.footer-inner{
+  max-width:var(--max-width);
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  text-align:center;
+}
+
+.footer-col{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.footer-logo{
+  width:90px;
+  height: 100px;
+  margin-bottom:1rem;
+}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+  margin-bottom:1rem;
+}
+.footer-links a{
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:700;
+}
+
+.social{
+  display:flex;
+  justify-content:center;
+  gap:1.25rem;
+  margin-bottom:1.5rem;
+}
+.social a{
+  text-decoration:none;
+  font-weight:bold;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.social a svg{
+  width:28px;
+  height:28px;
+  fill:var(--accent);
+  display:block;
+}
+
+.social a:focus { outline: 3px solid rgba(240,248,255,0.2); outline-offset:3px; border-radius:4px; }
+
+.video-footer{
+  margin-top:0.5rem;
+}
+.video-footer a{
+  color:var(--accent);
+  font-weight:700;
+  text-decoration:underline;
+}
+
+.meta{
+  font-size:0.85rem;
+  opacity:0.9;
+}
+
+@media (min-width:480px){
+  .hero-media{min-height:280px}
+}
