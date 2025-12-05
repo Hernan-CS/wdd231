@@ -124,7 +124,7 @@ main {
   align-items:center;
   justify-content:center;
 
-  background-image: url('images/myg-banner.png');
+  background-image: url('../images/myg-banner.png');
   background-size: cover;
   background-position: center;
 }
